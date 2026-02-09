@@ -142,16 +142,20 @@ async def recommend(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     keyboard = [
         [
-            InlineKeyboardButton("⚡ Быстрые рекомендации", callback_data='mode_fast'),
-            InlineKeyboardButton("🤖 AI-рекомендации", callback_data='mode_ai')
+            InlineKeyboardButton("⚡ Быстрые", callback_data='mode_fast'),
+            InlineKeyboardButton("🤖 AI-Меню", callback_data='mode_ai')
+        ],
+        [
+            InlineKeyboardButton("🥗 AI-Рецепты (ПП)", callback_data='mode_recipe')
         ]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     
     await update.message.reply_text(
-        "Выберите режим рекомендаций:\\n\\n"
-        "⚡ **Быстрые** — мгновенный результат\\n"
-        "🤖 **AI** — умный подбор с объяснениями (2-3 сек)",
+        "Выберите режим рекомендаций:\n\n"
+        "⚡ **Быстрые** — случайное меню на день\n"
+        "🤖 **AI-Меню** — умный подбор с объяснениями\n"
+        "🥗 **AI-Рецепты** — авторские рецепты с корзиной",
         reply_markup=reply_markup,
         parse_mode='Markdown'
     )
@@ -270,10 +274,11 @@ async def recommend_fast(update: Update, context: ContextTypes.DEFAULT_TYPE):
             )
         response += "\n"
 
-    keyboard = [['/set_goals'], ['/recommend']]
-    reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+    # Add "Another Option" button
+    keyboard_inline = [[InlineKeyboardButton("🔄 Попробовать еще вариант", callback_data='mode_fast')]]
+    reply_markup_inline = InlineKeyboardMarkup(keyboard_inline)
 
-    await send_func(response, parse_mode='Markdown', disable_web_page_preview=True, reply_markup=reply_markup)
+    await send_func(response, parse_mode='Markdown', disable_web_page_preview=True, reply_markup=reply_markup_inline)
 
 
 async def ai_recommend(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -361,10 +366,11 @@ async def ai_recommend(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # Add header and footer
         final_response = f"🎯 **Ваша цель:** {goals['calories']} ккал\n\n{ai_response}\n\n_Совет от AI. Для быстрых рекомендаций используйте /recommend_"
         
-        keyboard = [['/recommend'], ['/set_goals']]
-        reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+        # Add "Another Option" button
+        keyboard_inline = [[InlineKeyboardButton("🔄 Другой AI-вариант", callback_data='mode_ai')]]
+        reply_markup_inline = InlineKeyboardMarkup(keyboard_inline)
         
-        await send_func(final_response, parse_mode='Markdown', disable_web_page_preview=True, reply_markup=reply_markup)
+        await send_func(final_response, parse_mode='Markdown', disable_web_page_preview=True, reply_markup=reply_markup_inline)
         
     except Exception as e:
         await send_func(f"❌ Ошибка AI: {str(e)}\n\nПопробуйте обычные рекомендации: /recommend")
@@ -378,6 +384,88 @@ async def handle_mode_selection(update: Update, context: ContextTypes.DEFAULT_TY
         await recommend_fast(update, context)
     elif query.data == 'mode_ai':
         await ai_recommend(update, context)
+    elif query.data == 'mode_recipe':
+        await ai_recipe(update, context)
+
+
+async def ai_recipe(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """AI-powered recipes with shopping basket"""
+    if update.callback_query:
+        query = update.callback_query
+        await query.answer()
+        user_id = query.from_user.id
+        send_func = query.message.reply_text
+    else:
+        user_id = update.effective_user.id
+        send_func = update.message.reply_text
+        
+    if user_id not in user_goals:
+        await send_func("Сначала задайте калораж командой /set_goals")
+        return
+
+    goals = user_goals[user_id]
+    current_products = load_products()
+    
+    # Select products for recipes (semi-finished + vegetables + protein)
+    possible_ingredients = [p for p in current_products if p.get('category') in ['semi-finished', 'vegetable', 'main', 'frozen']]
+    random.shuffle(possible_ingredients)
+    ingredients_sample = possible_ingredients[:12]
+    
+    ingredients_text = ""
+    for p in ingredients_sample:
+        w = p.get('weight_g', 100)
+        cal = int(p['calories'] * w / 100)
+        ingredients_text += f"- {p['name']}: {cal}ккал\n"
+        
+    try:
+        groq_client = Groq(api_key=os.getenv('GROQ_API_KEY'))
+        await send_func("🍳 Шеф-повар AI придумывает рецепт... (2-4 сек)")
+        
+        prompt = f"""Ты — шеф-повар здорового питания. Твоя задача — предложить ОДИН вкусный, быстрый и необычный рецепт (завтрак, обед или ужин) из списка продуктов ниже.
+
+Цель пользователя по калориям: {goals['calories'] // 3} ккал на один прием пищи.
+
+Доступные продукты (используй минимум 2 из списка):
+{ingredients_text}
+
+ФОРМАТ ОТВЕТА:
+🌟 НАЗВАНИЕ БЛЮДА (яркое, аппетитное)
+📝 ИНГРЕДИЕНТЫ (только те, что в списке!)
+👨‍🍳 ИНСТРУКЦИЯ (понятно, по шагам)
+🔥 КБЖУ (примерный расчет для этого блюда)
+💡 ПОЧЕМУ ЭТО ВКУСНО: (кратко)
+
+Будь эмоциональным и вдохновляющим!"""
+
+        chat_completion = groq_client.chat.completions.create(
+            messages=[{"role": "user", "content": prompt}],
+            model="llama-3.3-70b-versatile",
+            temperature=0.8,
+            max_tokens=1500,
+        )
+        
+        recipe_response = chat_completion.choices[0].message.content
+        
+        # Link products mentioned in the recipe
+        shopping_list = "🛒 **Корзина для этого рецепта (купить в Лавке):**\n"
+        found_any = False
+        for p in ingredients_sample:
+            if p['name'].lower() in recipe_response.lower():
+                shopping_list += f"- [{p['name']}]({p['link']})\n"
+                found_any = True
+        
+        if not found_any:
+             shopping_list = "" # Hide if no links matched
+
+        final_response = f"✨ **Ваш AI-Рецепт** ✨\n\n{recipe_response}\n\n{shopping_list}"
+        
+        keyboard_inline = [[InlineKeyboardButton("🔄 Другой рецепт", callback_data='mode_recipe')]]
+        reply_markup_inline = InlineKeyboardMarkup(keyboard_inline)
+        
+        await send_func(final_response, parse_mode='Markdown', disable_web_page_preview=True, reply_markup=reply_markup_inline)
+        
+    except Exception as e:
+        await send_func(f"❌ Ошибка Шеф-повара: {str(e)}")
 
 
 if __name__ == '__main__':

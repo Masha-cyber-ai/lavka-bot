@@ -20,26 +20,6 @@
         "link": "https://lavka.yandex.ru/search?text=%D0%A1%D0%BE%D0%BB%D1%8F%D0%BD%D0%BA%D0%B0%20%D0%BC%D1%8F%D1%81%D0%BD%D0%B0%D1%8F%20%D0%98%D0%B7%20%D0%9B%D0%B0%D0%B2%D0%BA%D0%B8"
     },
     {
-        "name": "Грибной крем-суп (Из Лавки)",
-        "category": "soup",
-        "calories": 120,
-        "protein": 3,
-        "fat": 8,
-        "carbs": 6,
-        "weight_g": 300,
-        "link": "https://lavka.yandex.ru/search?text=%D0%93%D1%80%D0%B8%D0%B1%D0%BD%D0%BE%D0%B9%20%D0%BA%D1%80%D0%B5%D0%BC-%D1%81%D1%83%D0%BF"
-    },
-    {
-        "name": "Том Ям с курицей (Из Лавки)",
-        "category": "soup",
-        "calories": 140,
-        "protein": 8,
-        "fat": 8,
-        "carbs": 5,
-        "weight_g": 300,
-        "link": "https://lavka.yandex.ru/search?text=%D0%A2%D0%BE%D0%BC%20%D0%AF%D0%BC%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%98%D0%B7%20%D0%9B%D0%B0%D0%B2%D0%BA%D0%B8"
-    },
-    {
         "name": "Котлета из индейки с пюре (Из Лавки)",
         "category": "main",
         "calories": 348,
@@ -47,17 +27,7 @@
         "fat": 15,
         "carbs": 29,
         "weight_g": 250,
-        "link": "https://lavka.yandex.ru/search?text=%D0%9A%D0%BE%D1%82%D0%BB%D0%B5%D1%82%D0%B0%20%D0%B8%D0%B7%20%D0%B8%D0%BD%D0%B4%D0%B5%D0%B9%D0%BA%D0%B8%20%D1%81%20%D0%BF%D1%8E%D1%80%D0%B5%20%D0%98%D0%B7%20%D0%9B%D0%B0%D0%B2%D0%BA%D0%B8"
-    },
-    {
-        "name": "Бифштекс с яйцом и картофелем (Из Лавки)",
-        "category": "main",
-        "calories": 420,
-        "protein": 28,
-        "fat": 25,
-        "carbs": 20,
-        "weight_g": 280,
-        "link": "https://lavka.yandex.ru/search?text=%D0%91%D0%B8%D1%84%D1%88%D1%82%D0%B5%D0%BA%D1%81%20%D1%81%20%D1%80%D0%BE%D1%81%D1%82%D0%B8"
+        "link": "https://lavka.yandex.ru/search?text=%D0%9A%D0%BE%D1%82%D0%BB%D0%B5%D1%82%D0%B0%20%D0%B8%D0%B7%20%D0%B8%D0%BD%D0%B4%D0%B5%D0%B9%D0%BA%D0%B8"
     },
     {
         "name": "Паста Карбонара (Из Лавки)",
@@ -67,17 +37,7 @@
         "fat": 33,
         "carbs": 42,
         "weight_g": 270,
-        "link": "https://lavka.yandex.ru/search?text=%D0%9F%D0%B0%D1%81%D1%82%D0%B0%20%D0%9A%D0%B0%D1%80%D0%B1%D0%BE%D0%BD%D0%B0%D1%80%D0%B0%20%D0%98%D0%B7%20%D0%9B%D0%B0%D0%B2%D0%BA%D0%B8"
-    },
-    {
-        "name": "Плов с курицей (Из Лавки)",
-        "category": "main",
-        "calories": 480,
-        "protein": 20,
-        "fat": 20,
-        "carbs": 55,
-        "weight_g": 250,
-        "link": "https://lavka.yandex.ru/search?text=%D0%9F%D0%BB%D0%BE%D0%B2%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%98%D0%B7%20%D0%9B%D0%B0%D0%B2%D0%BA%D0%B8"
+        "link": "https://lavka.yandex.ru/search?text=%D0%9F%D0%B0%D1%81%D1%82%D0%B0%20%D0%9A%D0%B0%D1%80%D0%B1%D0%BE%D0%BD%D0%B0%D1%80%D0%B0"
     },
     {
         "name": "Поке с лососем (Из Лавки)",
@@ -90,144 +50,44 @@
         "link": "https://lavka.yandex.ru/search?text=%D0%9F%D0%BE%D0%BA%D0%B5%20%D1%81%20%D0%BB%D0%BE%D1%81%D0%BE%D1%81%D0%B5%D0%BC"
     },
     {
-        "name": "Куриные котлеты с гречкой (Из Лавки)",
-        "category": "main",
-        "calories": 310,
-        "protein": 22,
-        "fat": 8,
-        "carbs": 35,
-        "weight_g": 250,
-        "link": "https://lavka.yandex.ru/search?text=%D0%9A%D0%BE%D1%82%D0%BB%D0%B5%D1%82%D1%8B%20%D1%81%20%D0%B3%D1%80%D0%B5%D1%87%D0%BA%D0%BE%D0%B9"
-    },
-    {
-        "name": "Бефстроганов с пюре (Из Лавки)",
-        "category": "main",
-        "calories": 450,
-        "protein": 25,
-        "fat": 28,
-        "carbs": 30,
-        "weight_g": 280,
-        "link": "https://lavka.yandex.ru/search?text=%D0%91%D0%B5%D1%84%D1%81%D1%82%D1%80%D0%BE%D0%B3%D0%B0%D0%BD%D0%BE%D0%B2%20%D1%81%20%D0%BF%D1%8E%D1%80%D0%B5%20%D0%98%D0%B7%20%D0%9B%D0%B0%D0%B2%D0%BA%D0%B8"
-    },
-    {
-        "name": "Пельмени с индейкой (Заморозка, Из Лавки)",
+        "name": "Пельмени с индейкой (Заморозка)",
         "category": "frozen",
         "calories": 210,
         "protein": 11,
         "fat": 8,
         "carbs": 24,
         "weight_g": 800,
-        "link": "https://lavka.yandex.ru/search?text=%D0%9F%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D0%B8%20%D1%81%20%D0%B8%D0%BD%D0%B4%D0%B5%D0%B9%D0%BA%D0%BE%D0%B9%20%D0%98%D0%B7%20%D0%9B%D0%B0%D0%B2%D0%BA%D0%B8"
+        "link": "https://lavka.yandex.ru/search?text=%D0%9F%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D0%B8%20%D1%81%20%D0%B8%D0%BD%D0%B4%D0%B5%D0%B9%D0%BA%D0%BE%D0%B9"
     },
     {
-        "name": "Вареники с вишней (Заморозка, Из Лавки)",
-        "category": "frozen",
-        "calories": 190,
-        "protein": 3,
-        "fat": 1,
-        "carbs": 40,
-        "weight_g": 500,
-        "link": "https://lavka.yandex.ru/search?text=%D0%92%D0%B0%D1%80%D0%B5%D0%BD%D0%B8%D0%BA%D0%B8%20%D1%81%20%D0%B2%D0%B8%D1%88%D0%BD%D0%B5%D0%B9"
-    },
-    {
-        "name": "Наггетсы куриные (Заморозка, Из Лавки)",
-        "category": "frozen",
-        "calories": 240,
-        "protein": 14,
-        "fat": 12,
-        "carbs": 16,
-        "weight_g": 300,
-        "link": "https://lavka.yandex.ru/search?text=%D0%9D%D0%B0%D0%B3%D0%B3%D0%B5%D1%82%D1%81%D1%8B%20%D0%BA%D1%83%D1%80%D0%B8%D0%BD%D1%8B%D0%B5"
-    },
-    {
-        "name": "Сырники классические (Из Лавки, 2 шт)",
+        "name": "Сырники (Из Лавки)",
         "category": "breakfast",
         "calories": 306,
         "protein": 20,
         "fat": 13,
         "carbs": 27,
         "weight_g": 140,
-        "link": "https://lavka.yandex.ru/search?text=%D0%A1%D1%8B%D1%80%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%98%D0%B7%20%D0%9B%D0%B0%D0%B2%D0%BA%D0%B8"
+        "link": "https://lavka.yandex.ru/search?text=%D0%A1%D1%8B%D1%80%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%98%D0%B7%20%D0%9B%D0%B0%D0%B2%D0%BA%D0%B8"
     },
     {
-        "name": "Блинчики с творогом (Из Лавки)",
-        "category": "breakfast",
-        "calories": 180,
-        "protein": 9,
-        "fat": 6,
-        "carbs": 22,
-        "weight_g": 210,
-        "link": "https://lavka.yandex.ru/search?text=%D0%91%D0%BB%D0%B8%D0%BD%D1%87%D0%B8%D0%BA%D0%B8%20%D1%81%20%D1%82%D0%B2%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%D0%BC"
-    },
-    {
-        "name": "Запеканка творожная (Из Лавки)",
-        "category": "breakfast",
-        "calories": 220,
-        "protein": 16,
-        "fat": 12,
-        "carbs": 18,
-        "weight_g": 180,
-        "link": "https://lavka.yandex.ru/search?text=%D0%97%D0%B0%D0%BF%D0%B5%D0%BA%D0%B0%D0%BD%D0%BA%D0%B0%20%D1%82%D0%B2%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D0%B0%D1%8F"
-    },
-    {
-        "name": "Салат Цезарь с курицей (Из Лавки)",
+        "name": "Салат Цезарь (Из Лавки)",
         "category": "salad",
         "calories": 257,
         "protein": 17,
         "fat": 18,
         "carbs": 7,
         "weight_g": 170,
-        "link": "https://lavka.yandex.ru/search?text=%D0%A1%D0%B0%D0%BB%D0%B0%D1%82%20%D0%A6%D0%B5%D0%B7%D0%B0%D1%80%D1%8C%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%98%D0%B7%20%D0%9B%D0%B0%D0%B2%D0%BA%D0%B8"
+        "link": "https://lavka.yandex.ru/search?text=%D0%A1%D0%B0%D0%BB%D0%B0%D1%82%20%D0%A6%D0%B5%D0%B7%D0%B0%D1%80%D1%8C"
     },
     {
-        "name": "Салат Греческий (Из Лавки)",
-        "category": "salad",
-        "calories": 140,
-        "protein": 4,
-        "fat": 12,
-        "carbs": 5,
-        "weight_g": 180,
-        "link": "https://lavka.yandex.ru/search?text=%D0%A1%D0%B0%D0%BB%D0%B0%D1%82%20%D0%93%D1%80%D0%B5%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9"
-    },
-    {
-        "name": "Салат Оливье с колбасой (Из Лавки)",
-        "category": "salad",
-        "calories": 290,
-        "protein": 7,
-        "fat": 25,
-        "carbs": 10,
-        "weight_g": 200,
-        "link": "https://lavka.yandex.ru/search?text=%D0%9E%D0%BB%D0%B8%D0%B2%D1%8C%D0%B5"
-    },
-    {
-        "name": "Батончик протеиновый Rex (шоколад)",
+        "name": "Протеиновый батончик Rex",
         "category": "snack",
         "calories": 138,
         "protein": 11,
         "fat": 5,
         "carbs": 12,
         "weight_g": 40,
-        "link": "https://lavka.yandex.ru/search?text=%D0%91%D0%B0%D1%82%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BF%D1%80%D0%BE%D1%82%D0%B5%D0%B8%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20Rex"
-    },
-    {
-        "name": "Пудинг High Protein (шоколадный)",
-        "category": "snack",
-        "calories": 160,
-        "protein": 20,
-        "fat": 3,
-        "carbs": 13,
-        "weight_g": 200,
-        "link": "https://lavka.yandex.ru/search?text=Ehrmann%20High%20Protein"
-    },
-    {
-        "name": "Круассан с миндалем (Из Лавки)",
-        "category": "snack",
-        "calories": 380,
-        "protein": 7,
-        "fat": 22,
-        "carbs": 38,
-        "weight_g": 90,
-        "link": "https://lavka.yandex.ru/search?text=%D0%9A%D1%80%D1%83%D0%B0%D1%81%D1%81%D0%B0%D0%BD%20%D1%81%20%D0%BC%D0%B8%D0%BD%D0%B4%D0%B0%D0%BB%D0%B5%D0%BC"
+        "link": "https://lavka.yandex.ru/search?text=%D0%91%D0%B0%D1%82%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20Rex"
     },
     {
         "name": "Бананы (1 кг)",
@@ -240,17 +100,7 @@
         "link": "https://lavka.yandex.ru/search?text=%D0%91%D0%B0%D0%BD%D0%B0%D0%BD%D1%8B"
     },
     {
-        "name": "Яблоки сезонные (1 кг)",
-        "category": "fruit",
-        "calories": 470,
-        "protein": 4,
-        "fat": 4,
-        "carbs": 98,
-        "weight_g": 1000,
-        "link": "https://lavka.yandex.ru/search?text=%D0%AF%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8"
-    },
-    {
-        "name": "Помидоры Черри (250г)",
+        "name": "Помидоры Черри",
         "category": "vegetable",
         "calories": 45,
         "protein": 2.7,
@@ -258,5 +108,165 @@
         "carbs": 7.5,
         "weight_g": 250,
         "link": "https://lavka.yandex.ru/search?text=%D0%A7%D0%B5%D1%80%D1%80%D0%B8"
+    },
+    {
+        "name": "Крылышки Баффало (Острые, Из Лавки)",
+        "category": "spicy",
+        "calories": 250,
+        "protein": 18,
+        "fat": 18,
+        "carbs": 2,
+        "weight_g": 250,
+        "link": "https://lavka.yandex.ru/search?text=%D0%9A%D1%80%D1%8B%D0%BB%D1%8B%D1%88%D0%BA%D0%B8%20%D0%91%D0%B0%D1%84%D1%84%D0%B0%D0%BB%D0%BE"
+    },
+    {
+        "name": "Тайский рис с курицей (Острое)",
+        "category": "spicy",
+        "calories": 410,
+        "protein": 19,
+        "fat": 15,
+        "carbs": 48,
+        "weight_g": 300,
+        "link": "https://lavka.yandex.ru/search?text=%D0%A0%D0%B8%D1%81%20%D0%BF%D0%BE-%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8"
+    },
+    {
+        "name": "Чипсы из морской капусты (Соленое)",
+        "category": "snack",
+        "calories": 60,
+        "protein": 2,
+        "fat": 5,
+        "carbs": 1,
+        "weight_g": 5,
+        "link": "https://lavka.yandex.ru/search?text=%D1%87%D0%B8%D0%BF%D1%81%D1%8B%20%D0%BD%D0%BE%D1%80%D0%B8"
+    },
+    {
+        "name": "Стейк из лосося в маринаде (Полуфабрикат)",
+        "category": "semi-finished",
+        "calories": 220,
+        "protein": 20,
+        "fat": 15,
+        "carbs": 1,
+        "weight_g": 200,
+        "link": "https://lavka.yandex.ru/search?text=%D0%BB%D0%BE%D1%81%D0%BE%D1%81%D1%8C%20%D1%81%D1%82%D0%B5%D0%B9%D0%BA"
+    },
+    {
+        "name": "Куриное филе в панировке (Жареное)",
+        "category": "main",
+        "calories": 280,
+        "protein": 22,
+        "fat": 14,
+        "carbs": 15,
+        "weight_g": 200,
+        "link": "https://lavka.yandex.ru/search?text=%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B0%20%D0%B2%20%D0%BF%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5"
+    },
+    {
+        "name": "Манго Египет (1 шт)",
+        "category": "fruit",
+        "calories": 180,
+        "protein": 2,
+        "fat": 1,
+        "carbs": 45,
+        "weight_g": 300,
+        "link": "https://lavka.yandex.ru/search?text=%D0%BC%D0%B0%D0%BD%D0%B3%D0%BE"
+    },
+    {
+        "name": "Сыр Бри (Нейтральное)",
+        "category": "snack",
+        "calories": 300,
+        "protein": 18,
+        "fat": 25,
+        "carbs": 1,
+        "weight_g": 100,
+        "link": "https://lavka.yandex.ru/search?text=%D1%81%D1%8B%D1%80%20%D0%B1%D1%80%D0%B8"
+    },
+    {
+        "name": "Овсянка с манго и чиа (Завтрак)",
+        "category": "breakfast",
+        "calories": 240,
+        "protein": 6,
+        "fat": 8,
+        "carbs": 35,
+        "weight_g": 200,
+        "link": "https://lavka.yandex.ru/search?text=%D0%BE%D0%B2%D1%81%D1%8F%D0%BD%D0%BA%D0%B0%20%D1%81%20%D0%BC%D0%B0%D0%BD%D0%B3%D0%BE"
+    },
+    {
+        "name": "Мидии в створках (Заморозка)",
+        "category": "frozen",
+        "calories": 170,
+        "protein": 24,
+        "fat": 7,
+        "carbs": 4,
+        "weight_g": 500,
+        "link": "https://lavka.yandex.ru/search?text=%D0%BC%D0%B8%D0%B4%D0%B8%D0%B8"
+    },
+    {
+        "name": "Шаурма с курицей (Жареное/Комбо)",
+        "category": "main",
+        "calories": 520,
+        "protein": 25,
+        "fat": 22,
+        "carbs": 54,
+        "weight_g": 300,
+        "link": "https://lavka.yandex.ru/search?text=%D1%88%D0%B0%D1%83%D1%80%D0%BC%D0%B0"
+    },
+    {
+        "name": "Творог 5% (Для рецептов)",
+        "category": "semi-finished",
+        "calories": 121,
+        "protein": 17,
+        "fat": 5,
+        "carbs": 3,
+        "weight_g": 180,
+        "link": "https://lavka.yandex.ru/search?text=%D1%82%D0%B2%D0%BE%D1%80%D0%BE%D0%B3%205%25"
+    },
+    {
+        "name": "Лаваш армянский (Для рецептов)",
+        "category": "semi-finished",
+        "calories": 236,
+        "protein": 8,
+        "fat": 1,
+        "carbs": 48,
+        "weight_g": 150,
+        "link": "https://lavka.yandex.ru/search?text=%D0%BB%D0%B0%D0%B2%D0%B0%D1%88"
+    },
+    {
+        "name": "Авокадо Хасс (2 шт)",
+        "category": "vegetable",
+        "calories": 320,
+        "protein": 4,
+        "fat": 30,
+        "carbs": 12,
+        "weight_g": 200,
+        "link": "https://lavka.yandex.ru/search?text=%D0%B0%D0%B2%D0%BE%D0%BA%D0%B0%D0%B4%D0%BE"
+    },
+    {
+        "name": "Мед цветочный (Сладкое)",
+        "category": "treat",
+        "calories": 304,
+        "protein": 0.5,
+        "fat": 0,
+        "carbs": 80,
+        "weight_g": 250,
+        "link": "https://lavka.yandex.ru/search?text=%D0%BC%D0%B5%D0%B4"
+    },
+    {
+        "name": "Шоколад на меду (Сладкое)",
+        "category": "treat",
+        "calories": 540,
+        "protein": 6,
+        "fat": 35,
+        "carbs": 45,
+        "weight_g": 80,
+        "link": "https://lavka.yandex.ru/search?text=%D1%88%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%B4%20%D0%BD%D0%B0%20%D0%BC%D0%B5%D0%B4%D1%83"
+    },
+    {
+        "name": "Креветки очищенные (Заморозка)",
+        "category": "frozen",
+        "calories": 95,
+        "protein": 20,
+        "fat": 1,
+        "carbs": 1,
+        "weight_g": 300,
+        "link": "https://lavka.yandex.ru/search?text=%D0%BA%D1%80%D0%B5%D0%B2%D0%B5%D1%82%D0%BA%D0%B8"
     }
 ]
